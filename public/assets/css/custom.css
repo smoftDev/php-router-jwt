@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan:ital@0;1&display=swap');
+
+:root{
+    --btn-bg: #2d7f73;
+    --btn-border-color: #2d7f73;
+    --btn-hover-bg: #5a9c94;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.btn-primary{
+    background: var(--btn-bg);
+    border-color: var(--btn-border-color);
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active,
+.btn:hover, .btn:focus{
+    background-color: var(--btn-hover-bg);
+    border-color: var(--btn-hover-bg);
+}
+
+label{
+    color: rgb(150, 136, 136);
+}
